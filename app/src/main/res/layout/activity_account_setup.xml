@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    tools:context=".AccountSetupActivity"
+    android:padding="16dp">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:gravity="center_horizontal">
+
+       <ImageButton
+           android:id="@+id/ib_setup_profile_img"
+           android:layout_width="150dp"
+           android:layout_height="150dp"
+           android:layout_marginTop="8dp"
+           app:srcCompat="@drawable/ic_user"
+           android:scaleType="centerCrop"/>
+
+       <EditText
+           android:id="@+id/edt_setup_profiel_name"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Enter Display Name"
+           android:layout_marginTop="24dp"
+           android:layout_below="@+id/ib_setup_profile_img"
+           />
+
+   </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:text="submit"
+        android:textColor="@color/colorWhite" />
+
+
+
+</RelativeLayout>
